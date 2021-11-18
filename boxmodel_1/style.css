@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+}
+.maya{
+  height: 100px;
+  background-color: coral;
+  width: 300px;
+}
+.text{
+  color: blue;
+  border-color: red;
+  border-width: 1px;
+  border-style: dashed;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.box1{
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  margin: 10px;
+  margin-bottom: 50px;
+  width: 25%;
+}
+.absolutebox{
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  margin: 10px;
+  margin-bottom: 50px;
+  width: 25%;
+  position: absolute;
+  left: 600px;
+  top: 0px;
+}
+.relativebox{
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  margin: 10px;
+  margin-bottom: 50px;
+  width: 25%;
+  position: relative;
+  left: 50px;
+}
+.fixedbox{
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  margin: 10px;
+  margin-bottom: 50px;
+  width: 25%;
+  position: fixed;
+  left: 500px;
+  top: 200px;
+}

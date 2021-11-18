@@ -1,0 +1,12 @@
+#headline{
+  color: lightblue;
+}
+body{
+  background-color: lightyellow;
+}
+#circlePositionSlider{
+  width: 200px;
+}
+#circleSizeSlider{
+  width: 200px;
+}

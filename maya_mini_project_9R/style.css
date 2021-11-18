@@ -1,0 +1,80 @@
+.songTitle{
+  font-size: 60px;
+  color: blue;
+  font-style: italic;
+}
+.ArtistName{
+  font-size: 40px;
+  color: white;
+}
+.lyricType{
+  text-decoration: underline;
+}
+.korean{
+  position: relative;
+  top: 0px;
+}
+.translation{
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+.links{
+  font-size: 20px;
+}
+#StrayKids{
+  color: red;
+}
+#Lyrics{
+  font-size: 30px;
+}
+
+#mv{
+  position: absolute;
+  top: 200px;
+}
+#danceVid{
+  position: absolute;
+  top: 520px;
+}
+#relaydance{
+  position: absolute;
+  top: 840px;
+}
+#lyricvid{
+  position: absolute;
+  top: 1160px;
+}
+.video{
+  position: absolute;
+  left: 900px;
+}
+#Members{
+  font-size: 30px;
+  color: white;
+}
+#conceptphoto{
+  position: absolute;
+  top: 345px;
+  left: 890px;
+}
+#noeasy{
+  height: 500px;
+}
+h2{
+  color: white;
+}
+body{
+  background-color: black;
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+p{
+  color: white;
+  line-height: 27px;
+}
+img{
+  max-width: 49%;
+  height: auto;
+}
