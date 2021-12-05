@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- link style  -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fauna+One">
+    <!-- link libraries -->
+    <script type="text/javascript" src="libs/p5.js"></script>
+    <script type="text/javascript" src="libs/p5.sound.js"></script>
+  </head>
+  <body>
+    <div class="whole_page">
+      <div id="canvasContainer"></div>
+      <div class="content_page">
+        <div class="TitleName">
+          <h1>An Adoptee Anthology</h1>
+          <h4>A Collection of Adoptee-related Resources I wish I had when I was younger</h4>
+        </div>
+
+        <div class="tools">
+          <button id="mouse" type="button" name="button">Mouse</button>
+          <button id="pen" type="button" name="button">Pen</button>
+          <button id="highlighter" type="button" name="button">Highlighter</button>
+          <button id="eraser" type="button" name="button">Eraser</button>
+          <button id="clear" type="button" name="button">Clear</button>
+          <button id="save" type="button" name="button">Save</button>
+        </div>
+
+        <div class="hotbar">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="category/movies/home.html">Movies</a></li>
+              <li><a href="category/books/home.html">Books</a></li>
+              <li><a href="category/organizations/home.html">Organzations</a></li>
+              <li><a href="category/DNA-searching/home.html">DNA/Searching</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="layout">
+          <div class="flex-container">
+            <div class="flex-child one">
+              <img class="mostrecent_homepic" src="images/found_poster.jpeg">
+              <div class="recentTxt">
+                <!-- <p class="imageSource">source</p> -->
+                <h2 class="inside-text"><a href="category/movies/pages/found.html">Found</a></h2>
+                <p class="inside-text"><span style="font-style: italic">Found</span> is a Netflix documentary released in November 2021. It is my most recently watched documentary and probably one of my most favorite adoptee-related documentaries because of the authenticity of the documentary. Compared to other films, this documentary does not seem to have a hidden agenda. Rather, the documentary focuses on the storytellinga and realness of being an adoptee while searching for family and birth parents. The documentary also does not show any white savior complex or hide the negative complexity of being an adoptee.</p>
+              </div>
+            </div>
+
+            <div class="flex-child two">
+              <div class="inside-recent">
+                <img class="recent_homepic" id="icsa" src="images/icsa-logo2.png">
+                <div class="recentTxt">
+                  <!-- <p class="imageSource">source</p> -->
+                  <h2 class="inside-text"><a href="category/dna-searching/pages/icsa.html">International Child Searching Alliance</a></h2>
+                  <p class="inside-text">ICSA is one of my favorite searching resource because of the endless amount of information.</p>
+                </div>
+              </div>
+              <div class="inside-recent">
+                <img class="recent_homepic" src="images/ccilogo.png">
+                <div class="recentTxt">
+                  <!-- <p class="imageSource">source</p> -->
+                  <h2 class="inside-text"><a href="category/organizations/pages/cci.html">Found</a></h2>
+                  <p class="inside-text">CCI is one of my favorite organizations because it is adoptee focused.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex2-container">
+            <div class="flex2-child one">
+              <img class="moive_homepic" src="images/movie-pngitem.png">
+              <div class="content">
+                <div class="inside">
+                  <!-- <p class="imageSource">source</p> -->
+                  <h2><a href="category/movies/home.html">Movies</a></h2>
+                  <p>This movie collection includes films: about adoptees, about adoptee-related topics, or starring adoptee actors and actresses</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex2-child two">
+              <img class="moive_homepic" src="images/books-PngItem.png">
+              <div class="content">
+                <div class="inside">
+                  <!-- <p class="imageSource">source</p> -->
+                  <h2><a href="category/books/home.html">Books</a></h2>
+                  <p>This book collection includes literature: about adoptees, about adoptee-related topics, or written by adoptees or adoptee-related personel</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex2-child three">
+              <img class="moive_homepic" src="images/org-PngItem.png">
+              <div class="content">
+                <div class="inside">
+                  <!-- <p class="imageSource">source</p> -->
+                  <h2><a href="category/organizations/home.html">Organizations</a></h2>
+                  <p>This organization collection includes groups: for adoptees, for adoptee-related causes, and are created by adoptees or adoptee-related personel</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex2-child four">
+              <img class="moive_homepic" id="dna-pic" src="images/dna-PngItem.png">
+              <div class="content">
+                <div class="inside">
+                  <!-- <p class="imageSource">source</p> -->
+                  <h2><a href="category/dna-searching/home.html">DNA & Searching</a></h2>
+                  <p>This DNA and Searching collection includes resources: about DNA testing and biological family searching-related sources</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Footer">
+          <p>Thank you for looking at my project and I hope it helps you as it once helped me in the past - Maya</p>
+        </div>
+      </div>
+      <!-- link own js -->
+      <script type="text/javascript" src="javascript/script.js"></script>
+    </div>
+  </body>
+</html>

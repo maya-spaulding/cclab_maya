@@ -1,0 +1,225 @@
+
+/* color palette
+Black
+#52110D
+#9F1915
+#CB1516
+#F5F3F4
+white */
+
+/* canvas */
+.whole_page{
+  position: relative;
+}
+.content_page{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+a{
+  color: black;
+}
+
+/* fonts */
+body {
+  font-family: 'Fauna One', serif;
+  font-size: 16px;
+}
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 46px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+}
+h4{
+  font-family: 'Cinzel', serif;
+  margin-top: 0px;
+}
+
+.tools{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.TitleName{
+  text-align: center;
+}
+/* most recent posts */
+/* made a flex box from a div */
+.flex-container {
+    /* display: flex; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.flex-child {
+    flex: 1;
+    /* border: 3px solid gray; */
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* text inside the recent divs */
+.recentTxt{
+  bottom: 0;
+  background: rgba(240, 240, 240, 255); /* Fallback color */
+  color: black;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.inside-recent{
+  /* border: 1px solid green; */
+}
+.inside-text{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* pics in the recent divs */
+.mostrecent_homepic{
+  width: 100%;
+  height: auto;
+}
+.recent_homepic{
+  width: 100%;
+  height: auto;
+}
+#icsa{
+  width: 45%;
+  height: auto;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* bottom categories */
+/* made a flex box from a div */
+.flex2-container {
+    /* display: flex; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* border: 2px solid red; */
+    align-items: baseline;
+}
+.flex2-child {
+    flex: 1;
+    /* border: 1px solid blue; */
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: -100px; */
+}
+.content{
+  /* position: relative; */
+  bottom: 0;
+  background: rgba(240, 240, 240, 255); /* Fallback color */
+  color: black;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* margin-bottom: -100px; */
+}
+.inside{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.imageSource{
+  margin: 0px;
+  padding-left: 5px;
+}
+/* most recent posts */
+
+/* navigavtion bar */
+ul{
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9F1915;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.hotbar a:hover {
+  background-color: #CB1516;
+  color: white;
+}
+/* nagivation bar */
+
+/* footer */
+.Footer{
+  margin: 0;
+  padding: 20px;
+  color: white;
+  background: #52110D
+}
+
+/* responsive for ipad */
+@media screen and (min-width: 900px){
+  .flex2-container{
+    display: flex;
+  }
+}
+/* responsive for phone */
+@media screen and (min-width: 640px){
+  .flex-container{
+    display: flex;
+  }
+  .moive_homepic{
+    width: 50%;
+    height: auto;
+  }
+  #dna-pic{
+    width: 40%;
+    height: auto;
+  }
+  .layout{
+    margin: auto;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .moive_homepic{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .flex-container{
+    margin: 10px;
+  }
+
+  .flex2-container{
+    margin: 10px;
+  }
+  .moive_homepic{
+    width: 50%;
+    height: auto;
+  }
+
+  ul li.right,
+  ul li {float: none;}
+
+  .drawing{
+    display: none;
+  }
+  .tools{
+    display: none;
+  }
+}

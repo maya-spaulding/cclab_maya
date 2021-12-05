@@ -1,0 +1,195 @@
+/* color palette
+Black
+#52110D
+#9F1915
+#CB1516
+#F5F3F4
+white */
+
+/* p5 */
+.whole_page{
+  position: relative;
+}
+.content_page{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.post-names{
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  color: Black;
+}
+/* fonts */
+body {
+  font-family: 'Fauna One', serif;
+  font-size: 16px;
+}
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 46px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+}
+h4{
+  font-family: 'Cinzel', serif;
+  margin-top: 0px;
+}
+
+.tools{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.TitleName{
+  text-align: center;
+}
+#title{
+  padding-left: 15px;
+}
+
+/* category boxes */
+.pages{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 3px solid gray; */
+  /* padding: 10px; */
+  /* max-width: 75%; */
+  /* height: auto; */
+  margin: auto;
+}
+.column{
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* border: 2px solid blue; */
+  padding: 10px;
+}
+.row{
+  /* flex: 1; */
+  /* border: 1px solid green; */
+  padding: 10px;
+  margin: 10px;
+}
+.category-photo{
+  max-width: 100%;
+  height: auto;
+}
+.books-photo{
+  max-width: 75%;
+  height: auto;
+}
+.org-photo{
+  max-width: 100%;
+  height: auto;
+}
+
+#mofang{
+  width: 150%;
+  height: auto;
+}
+
+
+/* navigavtion bar */
+ul{
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9F1915;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.hotbar a:hover {
+  background-color: #CB1516;
+  color: white;
+}
+/* nagivation bar */
+
+/* footer */
+.Footer{
+  margin: 0;
+  padding: 20px;
+  color: white;
+  background: #52110D
+}
+
+/* responsive for ipad */
+@media screen and (min-width: 900px){
+  .pages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 3px solid gray; */
+    max-width: 75%;
+    height: auto;
+    margin: auto;
+  }
+  .column{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    padding: 10px;
+  }
+  .row{
+    flex: 1;
+    /* border: 1px solid green; */
+    padding: 10px;
+  }
+}
+
+/* responsive for phone */
+@media screen and (min-width: 640px){}
+
+@media screen and (max-width: 900px){
+  .pages{
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .category-photo{
+    max-width: 100%;
+    height: auto;
+  }
+  .books-photo{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .pages{
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  ul li.right,
+  ul li {float: none;}
+
+  .drawing{
+    display: none;
+  }
+  .tools{
+    display: none;
+  }
+}
+
+/* p5 part */

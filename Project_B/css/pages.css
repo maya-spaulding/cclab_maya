@@ -1,0 +1,316 @@
+/* color palette
+Black
+#52110D
+#9F1915
+#CB1516
+#F5F3F4
+white */
+
+/* p5 */
+.whole_page{
+  position: relative;
+}
+.content_page{
+  /* talk with leon to fix this */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.tools{
+  /* talk with leon */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/* fonts */
+body {
+  font-family: 'Fauna One', serif;
+  font-size: 16px;
+}
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 46px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+}
+h4{
+  font-family: 'Cinzel', serif;
+  margin-top: 0px;
+}
+
+.TitleName{
+  text-align: center;
+}
+/* info */
+.info{
+  justify-content: center;
+  /* border: 3px solid gray; */
+  padding: 10px;
+  /* max-width: 75%; */
+  /* height: auto; */
+  margin: auto;
+}
+#toAlltheBoys{
+  display: flex;
+}
+.child{
+  flex: 1;
+  margin: 5px
+}
+.theBoys{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#movie-title-photo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#found{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+#half{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#lion{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#bluebayou{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#aka{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+#a4j{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+/* navigavtion bar */
+ul{
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9F1915;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.hotbar a:hover {
+  background-color: #CB1516;
+  color: white;
+}
+/* nagivation bar */
+
+/* footer */
+.Footer{
+  margin: 0;
+  padding: 20px;
+  color: white;
+  background: #52110D
+}
+
+/* responsive for ipad */
+@media screen and (min-width: 900px){
+  #allyoucaneverknow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+  }
+  #onechildnation{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  #twinsters{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+  }
+  #goodwomen{
+    max-width: 50%;
+    margin: auto;
+    padding: 10px
+  }
+}
+/* responsive for phone */
+@media screen and (min-width: 640px){
+  .info{
+    justify-content: center;
+    /* border: 3px solid gray; */
+    max-width: 75%;
+    height: auto;
+    margin: auto;
+  }
+  #text{
+    max-width: 50%;
+    margin: auto;
+    padding: 10px
+  }
+  #theboytext{
+    max-width: 75%;
+    margin: auto;
+    padding: 10px
+  }
+  #twinsters{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  #movie-title-photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #allyoucaneverknow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #found{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  #half{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  #lion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  #bluebayou{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  #onechildnation{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #goodwomen{
+    max-width: 100%;
+    margin: auto;
+    padding: 10px
+  }
+
+  p{
+    max-width: 100%;
+    margin: auto;
+    padding: 10px
+  }
+}
+
+@media screen and (max-width: 640px){
+  ul li.right,
+  ul li {float: none;}
+
+  .drawing{
+    display: none;
+  }
+  .tools{
+    display: none;
+  }
+  #movie-title-photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+  #found{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #half{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #lion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #bluebayou{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #onechildnation{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #twinsters{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #a4j{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
