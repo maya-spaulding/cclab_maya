@@ -39,6 +39,9 @@ h4{
   font-family: 'Cinzel', serif;
   margin-top: 0px;
 }
+a{
+  color: black;
+}
 
 .tools{
   position: absolute;
