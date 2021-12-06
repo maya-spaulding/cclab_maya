@@ -19,9 +19,9 @@ white */
 
 .tools{
   /* talk with leon */
-  position: absolute;
+  position: fixed;
   top: 0px;
-  left: 0px;
+  left: 5px;
 }
 /* fonts */
 body {

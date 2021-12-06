@@ -18,28 +18,54 @@ save.addEventListener('click', saveNow);
 
 let choice = 'none';
 
+function toggleHTMLcontent(onoff){
+  if(onoff == false){
+    document.getElementById("content_wrapper").style.pointerEvents = "none";
+  }else{
+    document.getElementById("content_wrapper").style.pointerEvents = "auto";
+  }
+}
 function pickMouse(){
   choice = 'mouse';
+  toggleHTMLcontent(true);
 }
 function pickPen(){
+  toggleHTMLcontent(false);
   choice = 'pen';
 }
 function pickHighlighter(){
   choice = 'highlighter';
+  toggleHTMLcontent(false);
 }
 function pickEraser(){
   choice = 'eraser';
+  toggleHTMLcontent(false);
 }
 function pickClear(){
   background("white");
+  toggleHTMLcontent(false);
+
 }
 
 function saveNow(){
   choice = 'save';
+  html2canvas(document.getElementsByClassName("whole_page")[0]).then(canvas => {
+  //     console.log(canvas);
+    let img = canvas.toDataURL("image/png");
+    // console.log(img);
+    let a = document.createElement("a");
+    a.href = img;
+    a.download = "annotations.png";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  })
 }
 
 function setup(){
-  let canvas = createCanvas(windowWidth, windowHeight);
+  let bodyHeight = document.getElementById("content_wrapper").scrollHeight
+
+  let canvas = createCanvas(windowWidth, bodyHeight);
   canvas.parent("canvasContainer");
   background(255);
   tool = new ChooseTool(mouseX, mouseY);
@@ -51,7 +77,8 @@ function draw(){
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  let bodyHeight = document.getElementById("content_wrapper").scrollHeight
+  resizeCanvas(windowWidth, bodyHeight);
 }
 
 class ChooseTool{

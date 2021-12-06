@@ -11,24 +11,25 @@
     <!-- link libraries -->
     <script type="text/javascript" src="../../libs/p5.js"></script>
     <script type="text/javascript" src="../../libs/p5.sound.js"></script>
+    <script type="text/javascript" src="../../libs/html2canvas.min.js"></script>
   </head>
   <body>
     <div class="whole_page">
       <div id="canvasContainer"></div>
-      <div class="content_page">
+      <div class="content_page" id="content_wrapper">
         <div class="TitleName">
           <h1>An Adoptee Anthology</h1>
           <h4>A Collection of Adoptee-related Resources I wish I had when I was younger</h4>
         </div>
 
-        <div class="tools">
+        <!-- <div class="tools">
           <button id="mouse" type="button" name="button">Mouse</button>
           <button id="pen" type="button" name="button">Pen</button>
           <button id="highlighter" type="button" name="button">Highlighter</button>
           <button id="eraser" type="button" name="button">Eraser</button>
           <button id="clear" type="button" name="button">Clear</button>
           <button id="save" type="button" name="button">Save</button>
-        </div>
+        </div> -->
 
         <div class="hotbar">
           <ul>
@@ -116,8 +117,19 @@
         </div>
       </div>
       <!-- link own js -->
-      <script type="text/javascript" src="../../javascript/script.js"></script>
+      <!-- <script type="text/javascript" src="../../javascript/script.js"></script> -->
     </div>
+
+    <div class="tools">
+      <button id="mouse" type="button" name="button">Mouse</button>
+      <button id="pen" type="button" name="button">Pen</button>
+      <button id="highlighter" type="button" name="button">Highlighter</button>
+      <button id="eraser" type="button" name="button">Eraser</button>
+      <button id="clear" type="button" name="button">Clear</button>
+      <button id="save" type="button" name="button">Save</button>
+    </div>
+
+    <script type="text/javascript" src="../../javascript/script.js"></script>
 
   </body>
 </html>
